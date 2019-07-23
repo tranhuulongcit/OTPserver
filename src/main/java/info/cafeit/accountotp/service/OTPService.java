@@ -1,7 +1,11 @@
 package info.cafeit.accountotp.service;
 
+import info.cafeit.accountotp.model.Result;
+
 public interface OTPService {
 
-    boolean requestOTP(String phoneNum);
+    Result requestOTP(String phoneNum);
+
+    Result verify(String phone, String code);
 
 }

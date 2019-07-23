@@ -37,4 +37,8 @@ public class SmsCodes implements Serializable {
     @JoinColumn(name = "user_id")
     private Users user;
 
+    public boolean equalsCode(String code) {
+        return code.equals(this.code);
+    }
+
 }
